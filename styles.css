@@ -3,6 +3,8 @@ body {
     background-color: grey;
     padding: 0;
     margin: 0;
+    min-width: 100%;
+    overflow-x: hidden;
     
 }
 header {
@@ -70,4 +72,20 @@ header {
     margin-left: 45vw;
     margin-right: 43vw;
 }
+
+#work-experience-page {
+    background-color: lightgrey;
+}
+.world-img {
+    width: 55rem;
+    margin-left: 18vw;
+    margin-right: 18vw;
+    margin-top: -30vh;
+}
+
+.work-box {
+    background-color: white;
+    width: 20rem;
+}
+
 
