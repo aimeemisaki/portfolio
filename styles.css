@@ -1,0 +1,14 @@
+body {
+    background-color: grey;
+}
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
