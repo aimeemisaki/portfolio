@@ -1,4 +1,7 @@
 
+* {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
 body {
     background-color: grey;
     padding: 0;
@@ -13,6 +16,7 @@ header {
     justify-content: space-around;
     width: 100vw;
 }
+
 
 .sticky {
     position: fixed;
@@ -37,18 +41,19 @@ header {
     margin-top: 5vh;
 }
 
-.welcome-page-linkedin-btn {
+#welcome-page-linkedin-btn {
     height: 3rem;
     margin-left: 20vw;
-    margin-top: 12vh;
+    margin-top: 18vh;
 }
 .profile-img {
     height: 30rem;
     width: 28rem;
+
 }
 .profile-img-box {
-    margin-left: 50vw;
-    margin-top: -50vh;
+    margin-left: 55vw;
+    margin-top: -65vh;
 }
 
 
@@ -67,14 +72,15 @@ header {
 }
 
 .scroll-down {
+    color: white;
     position: absolute;
     bottom: 1vh;
-    margin-left: 45vw;
-    margin-right: 43vw;
+    margin-left: 44vw;
+    margin-right: 44vw;
 }
 
 #work-experience-page {
-    background-color: lightgrey;
+    background-color: white;;
 }
 .world-img {
     width: 55rem;
@@ -84,8 +90,26 @@ header {
 }
 
 .work-box {
-    background-color: white;
+    background-color: lightgrey;
     width: 20rem;
 }
 
+.projects {
+    background-color: white;
+}
 
+.project-box {
+    background-color: grey;
+}
+.projects-box {
+    width: 90%;
+    margin-left: 5vw;
+}
+.project-img-box {
+    background-color: lightgrey;
+    height: 10rem;
+    width: 10rem;
+}
+.project-descript-box {
+    background-color: white;
+}
