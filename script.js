@@ -16,32 +16,42 @@ downArrowBox.addEventListener('mouseout', function downMouseOut () {
 })
 
 // HEADER (NAV BAR) JS
-
-
 // grabbing header
 let header = document.querySelector('header')
 
-// header offset position 
+// assigning offsetTop header to sticky variable 
 let sticky = header.offsetTop
-header.style.background = 'transparent'
 
 // grabbing header texts
-let headerTxt = document.querySelector('.header-txt')
-let aimeeTxt = document.querySelector('#aimee')
+let headerTxts = document.querySelectorAll('.header-txt')
+
+// hover header texts
+headerTxts.forEach((headerTxt) => {
+    headerTxt.addEventListener('mouseover', function stickyMouseover () {
+        headerTxt.style.color="grey"
+    })
+    headerTxt.addEventListener('mouseout', function stickyMouseout () {
+        headerTxt.style.color="darkgrey"
+    })
+})
+
 
 // function for sticky header // changing header to white on scroll // changing font color 
-// ?? why is header text not changing color
+// ??? header not changing to transparent
 function stickyHeader () {
     if (window.pageYOffset > sticky) {
-      header.classList.add('sticky');
-      header.style.background = 'white';
-      headerTxt.style.color = 'lightgrey';
+        header.classList.add('sticky')
+        header.style.background ="white"
+
     } else {
-      header.classList.remove('sticky');
-      header.style.background = 'transparent'
-      headerTxt.style.color = 'grey'
-    }
-  }
+        header.classList.remove('sticky')
+        header.style.background ="transparent"
+    
+    } 
+  };
+
+
+// calling stickyHeader function when window scrolls
 window.onscroll = function() {stickyHeader()};
 
 // header txt mouseover change color
@@ -57,6 +67,7 @@ window.onscroll = function() {stickyHeader()};
 
 // opening new tab for linkedin
 let linkedinBtn = document.querySelector('.linkedin-btn')
+
 linkedinBtn.addEventListener ('click', function LinkedinLink () {
     window.open('https://www.linkedin.com/in/aimee-misaki-1a6b5212a/', '_blank');
 })
@@ -132,9 +143,7 @@ phoneSubmitBtn.addEventListener('click', function namesInput () {
 
 let footerLinkedinBtn = document.querySelector('#footer-linkedin-link')
 
-footerLinkedinBtn.addEventListener('click', function LinkedinLink () {
-    window.open('https://www.linkedin.com/in/aimee-misaki-1a6b5212a/', '_blank');
-})
+footerLinkedinBtn.addEventListener('click', LinkedinLink)
 
 // github click even listener
 
