@@ -62,4 +62,28 @@ linkedinBtn.addEventListener ('click', function LinkedinLink () {
 })
 
 
+// FOOTER
 
+// linkedin click event listener 
+
+let footerLinkedinBtn = document.querySelector('#footer-linkedin-link')
+
+footerLinkedinBtn.addEventListener('click', function LinkedinLink () {
+    window.open('https://www.linkedin.com/in/aimee-misaki-1a6b5212a/', '_blank');
+})
+
+// github click even listener
+
+let footerGithubBtn = document.querySelector('#footer-github-link')
+
+footerGithubBtn.addEventListener('click', function GitHubLink () {
+    window.open('https://github.com/aimeemisaki')
+})
+
+// codepen click event listener 
+
+let footerCodePenBtn = document.querySelector('#footer-codepen-link') 
+
+footerCodePenBtn.addEventListener('click', function CodePenLink () {
+    window.open('https://codepen.io/aimeemisaki')
+})
