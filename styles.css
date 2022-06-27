@@ -12,9 +12,9 @@ body {
 }
 
 .page {
-    height: 100vh;
+    height: 100%;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     margin: 0;
 }
 /* HEADER */
@@ -32,7 +32,7 @@ header {
 }
 
 .header-text {
-    color: darkgrey;
+    color: blue;
 }
 
 /* WELCOME PAGE */
@@ -99,21 +99,17 @@ header {
 /* work-experience page*/
 
 #work-experience-page {
-    background-color: white;;
+    background-color: white;
+    margin-top: 0;
+    padding:0;
 }
-.world-img-box {
-    display: flex;
-    justify-content: center;
-    margin-top: -85vh;
-}
-.world-img {
-    width: 55rem;
-}
+
 
 .resume-btn-box {
     display: flex;
     justify-content: center;
-    margin-top: 20vh;
+    margin-top: 0;
+
 }
 .resume-btn {
     width: 12rem;
@@ -122,8 +118,47 @@ header {
 
 .work-box {
     background-color: lightgrey;
-    width: 20rem;
+    width: 18rem;
+    padding: 0.5rem;
+    margin: 0;
 }
+
+#paris-box {
+    margin-left: 38vw;
+    margin-bottom: 10vh;
+
+}
+
+#berlin-box {
+    margin-left: 73vw;
+    margin-bottom: 34vh;
+}
+
+#nyc-box {
+    margin-left: 2.5vw;
+}
+
+#tokyo-box {
+    margin-left: 70vw;
+    margin-bottom: -10vh;
+}
+
+#la-box {
+    margin-left: 4vw;
+    margin-bottom: 2vh;
+}
+.world-img-box {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: -90vh;
+    margin-left: 20vw;
+}
+.world-img {
+    width: 50rem;
+}
+
+/* PROJECTS PAGE */
 
 #projects-page {
     display: flex;

@@ -1,10 +1,14 @@
+// SCROLL DOWN ARROW //
+
 // hiding scroll down text
 let scrollDown = document.querySelector('.scroll-down')
 scrollDown.style.visibility = 'hidden'
-// down arrow to scroll on hover
+
+// grabbing downarrow and downarrow container elements
 let downArrowBox = document.querySelector('.down-img-box')
 let downArrow = document.querySelector('.down-img')
 
+// adding hover functions to down arrow 
 downArrowBox.addEventListener('mouseover', function downMouseOver () {
     scrollDown.style.visibility = 'visible'
     downArrow.style.visibility = 'hidden'
@@ -15,7 +19,10 @@ downArrowBox.addEventListener('mouseout', function downMouseOut () {
     downArrow.style.visibility = 'visible'
 })
 
-// HEADER (NAV BAR) JS
+
+
+// HEADER (NAV BAR) //
+
 // grabbing header
 let header = document.querySelector('header')
 
@@ -35,7 +42,6 @@ headerTxts.forEach((headerTxt) => {
     })
 })
 
-
 // function for sticky header // changing header to white on scroll // changing font color 
 // ??? header not changing to transparent
 function stickyHeader () {
@@ -45,25 +51,16 @@ function stickyHeader () {
 
     } else {
         header.classList.remove('sticky')
-        header.style.background ="transparent"
+        header.style.background ="#0000"
     
     } 
   };
 
-
 // calling stickyHeader function when window scrolls
 window.onscroll = function() {stickyHeader()};
 
-// header txt mouseover change color
-// grabbing txt elements
 
-// mouseover / mouseout events 
-// headerTxt.addEventListener('mouseover', function headerTxtMouseover () {
-//     headerTxt.style.color = 
-// })
-
-
-// WELCOME PAGE
+// WELCOME PAGE //
 
 // opening new tab for linkedin
 let linkedinBtn = document.querySelector('.linkedin-btn')
@@ -85,14 +82,15 @@ resumeBtn.addEventListener('click', function openResume () {
 
 // CONTACT ME PAGE
 
-// setting up email button
+// grabbing email button
 let emailBtn = document.querySelector('#email-btn')
+
 // open email app event listner
 emailBtn.addEventListener('click', function openEmail () {
     window.open ('mailto:aimeejmisaki@gmail.com')
 })
 
-// setting up phone button and phone modal
+// grabbing phone button, phone modal, phone submit button and phone num elements
 let phoneBtn = document.querySelector('#phone-btn')
 
 let phoneModal = document.querySelector('.phone-modal-box')
@@ -101,27 +99,31 @@ let phoneSubmitBtn = document.querySelector('.phone-submit')
 
 let phoneNum = document.querySelector('.phone-modal-answer')
 
-phoneNum.style.display = 'none'
+// hiding phoneModal before clicking on phoneBtn
+
+// hiding phoneNum before phoneModal question
+phoneNum.style.visibility ="hidden"
 
 // before phone click event
 // phoneModal.style.visibility = 'hidden'
-// phone buttone event listener
+// phoneBtn click event listener
 phoneBtn.addEventListener('click', function phoneModalPopup () {
     phoneModal.style.display = 'visible'
 })
 
 //phone modal event listener
 
+//grabbig input elements
 let firstNameInput = document.querySelector('#first-name')
 let lastNameInput = document.querySelector('#last-name')
 
-let nameAnswer = document.querySelector('.phone-modal-answer-box')
+
 
 // phone modal event listeners
 
 phoneSubmitBtn.addEventListener('click', function namesInput () {
-    if (firstNameInput == 'Aimee' && lastNameInput == 'Misaki') {
-        phoneNum.style.display = 'inline-block'
+    if (firstNameInput == "Aimee" && lastNameInput == "Misaki") {
+        phoneNum.style.visibility="visible"
     } else { 
         window.alert('Wrong name!')
     }
