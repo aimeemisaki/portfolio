@@ -90,60 +90,20 @@ emailBtn.addEventListener('click', function openEmail () {
     window.open ('mailto:aimeejmisaki@gmail.com')
 })
 
-// grabbing phone button, phone modal, phone submit button and phone num elements
+// grabbing phone button
 let phoneBtn = document.querySelector('#phone-btn')
 
-let phoneModal = document.querySelector('.phone-modal-box')
-
-let phoneSubmitBtn = document.querySelector('.phone-submit')
-
-let phoneNum = document.querySelector('.phone-modal-answer')
-
-// hiding phoneModal before clicking on phoneBtn
-
-// hiding phoneNum before phoneModal question
-phoneNum.style.visibility ="hidden"
-
-// before phone click event
-// phoneModal.style.visibility = 'hidden'
-// phoneBtn click event listener
-phoneBtn.addEventListener('click', function phoneModalPopup () {
-    phoneModal.style.display = 'visible'
+// phoneBtn pop up event listener
+phoneBtn.addEventListener('click', function showNumber () {
+    window.alert('You can reach me at (213)-271-8849!')
 })
-
-//phone modal event listener
-
-//grabbig input elements
-let firstNameInput = document.querySelector('#first-name')
-let lastNameInput = document.querySelector('#last-name')
-
-
-
-// phone modal event listeners
-
-phoneSubmitBtn.addEventListener('click', function namesInput () {
-    if (firstNameInput == "Aimee" && lastNameInput == "Misaki") {
-        phoneNum.style.visibility="visible"
-    } else { 
-        window.alert('Wrong name!')
-    }
-})
-
-
-
-
-
-
-
-
-
 
 
 // FOOTER
 
 // linkedin click event listener 
 
-let footerLinkedinBtn = document.querySelector('#footer-linkedin-link')
+let footerLinkedinBtn = document.querySelector('.footer-linkedin-link-box')
 
 footerLinkedinBtn.addEventListener('click', LinkedinLink)
 
@@ -162,3 +122,52 @@ let footerCodePenBtn = document.querySelector('#footer-codepen-link')
 footerCodePenBtn.addEventListener('click', function CodePenLink () {
     window.open('https://codepen.io/aimeemisaki')
 })
+
+
+// STRETCH GOALS //
+
+// let phoneModal = document.querySelector('.phone-modal-box')
+
+// let phoneSubmitBtn = document.querySelector('.phone-submit')
+
+// let phoneNum = document.querySelector('.phone-modal-answer')
+
+// hiding phoneModal before clicking on phoneBtn
+
+// hiding phoneNum before phoneModal question
+// phoneNum.style.visibility ="hidden"
+
+// before phone click event
+// phoneModal.style.visibility = 'hidden'
+// phoneBtn click event listener
+// phoneBtn.addEventListener('click', function phoneModalPopup () {
+//     phoneModal.style.display = 'visible'
+// })
+// //phone modal event listener
+
+// //grabbig input elements
+// let firstNameInput = document.querySelector('#first-name')
+// let lastNameInput = document.querySelector('#last-name')
+
+
+
+// // phone modal event listeners
+
+// phoneSubmitBtn.addEventListener('click', function namesInput () {
+//     if (firstNameInput == "Aimee" && lastNameInput == "Misaki") {
+//         phoneNum.style.visibility="visible"
+//     } else { 
+//         window.alert('Wrong name!')
+//     }
+// })
+
+
+
+
+
+
+
+
+
+
+

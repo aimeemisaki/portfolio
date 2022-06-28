@@ -4,6 +4,7 @@
 }
 body {
     background-color: white;
+    color: grey;
     padding: 0;
     margin: 0;
     min-width: 100%;
@@ -12,10 +13,11 @@ body {
 }
 
 .page {
-    height: 100%;
+    height: 100vh;
     padding-top: 5rem;
     padding-bottom: 2rem;
     margin: 0;
+    border: 1px solid black;
 }
 /* HEADER */
 
@@ -38,8 +40,9 @@ header {
 /* WELCOME PAGE */
 
 #welcome-page {
-    background-color: grey;
+    background-color: darkgrey;
     padding-bottom: 0;
+    color: white;
 }
 
 .intro-box {
@@ -60,17 +63,17 @@ header {
 
 #welcome-page-linkedin-btn {
     height: 3rem;
-    margin-left: 20vw;
-    margin-top: 18vh;
+    margin-left: 77vw;
+    margin-bottom: 20vh;
 }
 .profile-img {
-    height: 30rem;
-    width: 28rem;
+    height: 15rem;
+    width: 15rem;
 
 }
 .profile-img-box {
-    margin-left: 55vw;
-    margin-top: -65vh;
+    margin-left: 60vw;
+    margin-top: -55vh;
 }
 
 
@@ -101,7 +104,7 @@ header {
 #work-experience-page {
     background-color: white;
     margin-top: 0;
-    padding:0;
+    padding-top: 2vh;
 }
 
 
@@ -119,45 +122,53 @@ header {
 .work-box {
     background-color: lightgrey;
     width: 18rem;
-    padding: 0.5rem;
+    padding: 0.2rem;
     margin: 0;
 }
 
 #paris-box {
-    margin-left: 38vw;
-    margin-bottom: 10vh;
+    height: 7rem;
+    margin-left: 70vh;
+    margin-top: -117vh;
 
+}
+
+
+#nyc-box {
+    width: 15rem;
+    margin-left: 7vw;
+    margin-top: -90vh;
 }
 
 #berlin-box {
-    margin-left: 73vw;
-    margin-bottom: 34vh;
-}
-
-#nyc-box {
-    margin-left: 2.5vw;
+    margin-left: 74vw;
+    margin-top: 8vh;
 }
 
 #tokyo-box {
     margin-left: 70vw;
-    margin-bottom: -10vh;
+    margin-top: 36vh;
 }
 
 #la-box {
-    margin-left: 4vw;
-    margin-bottom: 2vh;
+    margin-left: 7vw;
+    margin-top: -9vh;
 }
+
 .world-img-box {
     display: flex;
     align-items: center;
     padding: 0;
-    margin-top: -90vh;
+    margin-top: 15vh;
     margin-left: 20vw;
 }
 .world-img {
-    width: 50rem;
+    height: 51rem;
 }
 
+.resume-btn-box {
+    margin-top: 55vh;
+}
 /* PROJECTS PAGE */
 
 #projects-page {
