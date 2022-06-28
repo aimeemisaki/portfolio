@@ -335,26 +335,81 @@ footer {
 
 /*small phones*/
 @media only screen and (max-width: 600px) {
+* {
+    overflow-x: hidden;
+    font-size: 12px;
+}
+.welcome-page {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.intro-box {
+    margin-top: 0vh;
+    margin-left: 10vw;
+    text-align: center;
+}
+.bio-div {
+    width: 300px;
+    height: 450px;
+    margin-left: 10vw;
+    margin-bottom: -5vh;
+    text-align: center;
+}
+
+.profile-img-box {
+    margin-left: 25vw;
 
 }
 
-
-/*tablets and large phones*/
-@media only screen and (min-width: 600px) {
-
+.world-img {
+    visibility: hidden;
 }
-
-/*medium devices*/
-@media only screen and (min-width: 768px) {
-
-}
-
-/*large devices eg laptops*/
-@media only screen and (min-width: 992px) {
-
-}
-
-/*extra large devices eg large laptops*/
-@media only screen and (min-width: 1200px) {
+.work-box {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
     
+}
+
+#berlin-box {
+    margin-top: 30vh;
+    margin-left: 60vw;
+}
+
+#nyc-box {
+    margin-top: -70vh;
+}
+
+#tokyo-box {
+    margin-left: 60vw;
+}
+
+#la-box {
+    margin-top: -10vh;
+}
+
+.resume-btn-box {
+    margin-top: 2vh;
+}
+
+.project-img {
+    width: 50px;
+    height: 50px;
+}
+.skills-box {
+    width: 320px;
+}
+
+.short-bio-box {
+    width: 400px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.footer-links-box {
+    margin-right: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 }
