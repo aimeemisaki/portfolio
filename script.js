@@ -108,15 +108,20 @@ window.onscroll = function() {stickyHeader()};
 
 // WELCOME PAGE //
 
-// opening new tab for linkedin
+// opening new tab for linkedin event listener
 let linkedinBtn = document.querySelector('.linkedin-btn')
 
 linkedinBtn.addEventListener ('click', function LinkedinLink () {
     window.open('https://www.linkedin.com/in/aimee-misaki-1a6b5212a/', '_blank');
 })
 
+// linkedinBtn mouseover cursor style to pointer event listener
+linkedinBtn.addEventListener('mouseover', function LinkedinBtnCursor (){
+    linkedinBtn.style.cursor = "pointer"
+})
+
 // WORK EXPERIENCE PAGE //
-// grabbing resume btn and resume-modal
+// grabbing resume btn
 let resumeBtn = document.querySelector('.resume-btn')
 
 // open resume PDF
@@ -124,6 +129,10 @@ resumeBtn.addEventListener('click', function openResume () {
     window.open('https://drive.google.com/file/d/1gZUlmY47Db55x_t2PPa7epc8_VQR4ZzB/view?usp=sharing', '_blank')
 }) 
 
+// resumeBtn mouseover curstor style to pointer event listener
+resumeBtn.addEventListener('mouseover', function resumeBtnCursor () {
+    resumeBtn.style.cursor = "context-menu"
+})
 
 
 // PROJECTS PAGE //
@@ -205,7 +214,7 @@ footerCodePenBtn.addEventListener('mouseover', function CodePenCursor () {
     footerCodePenBtn.style.cursor = "pointer"
 })
 
-footerLinkedinBtn.addEventListener('mouseover', function LinkedinCursor () {
+footerLinkedinBtn.addEventListener('mouseover', function footerLinkedinCursor () {
     footerLinkedinBtn.style.cursor = "pointer"
 })
 
