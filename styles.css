@@ -107,7 +107,7 @@ header {
     margin-right: 44vw;
 }
 
-/* work-experience page*/
+/* WORK EXPERIENCE PAGE*/
 
 
 #work-experience-page {
@@ -120,12 +120,14 @@ header {
 .resume-btn-box {
     display: flex;
     justify-content: center;
-    margin-top: 0;
-
+    margin-top: 53vh;
 }
+
 .resume-btn {
     width: 12rem;
-    height: 4rem;
+    height: 2rem;
+    color: green;
+    padding: 0;
 }
 
 .work-box {
@@ -174,16 +176,6 @@ header {
 }
 .world-img {
     height: 51rem;
-}
-
-.resume-btn-box {
-    margin-top: 53vh;
-
-}
-.resume-btn {
-    padding: 0;
-    height: 2rem;
-    color: green;
 }
 
 .city-h3 {
@@ -256,7 +248,7 @@ header {
 }
 
 
-/* contact page */
+/* CONTACT PAGE */
 #contactme-page {
     background-color: white;
 }
@@ -303,7 +295,7 @@ header {
     color: green;
 }
 
-/* footer */
+/* FOOTER */
 footer {
     background-color: white;
     display: flex;
@@ -413,3 +405,4 @@ footer {
     
 }
 }
+

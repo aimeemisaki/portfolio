@@ -1,5 +1,9 @@
 # Aimee Misaki's Portfolio
 ***
+## Portfolio Link
+---
+[PortfolioGitHub](https://aimeemisaki.github.io/portfolio/)
+<br/>
 ## Screenshots of Portfolio
 ---
 ![WelcomePage](/readme-images/welcomepage.png)
@@ -25,6 +29,32 @@
 * HTML/CSS
 * Javascript
 
+<br/>
+```Javascript
+let header = document.querySelector('header');
+let sticky = header.offsetTop;
+let headerTxts = document.querySelectorAll('.header-txt');
+function stickyHeader () {
+    if (window.pageYOffset > sticky) {
+        header.classList.add('sticky'),
+        header.style.backgroundColor ="white"
+
+    } else {
+        header.classList.remove('sticky'),
+        header.style.backgroundColor ="#a9a9a9"
+        headerTxts.forEach((headerTxt) => headerTxt.style.color = 'white')
+        headerTxts.forEach((headerTxt) => {
+            headerTxt.addEventListener('mouseout', function offTopMouseout () {
+                headerTxt.style.color = 'white'
+            })
+        })
+    
+    } 
+  };```
+
+## Approach
+---
+I started by writing the HTML, CSS and JS for the first section (Welcome Page and Header).
 
 ## User Stories 
 ---
