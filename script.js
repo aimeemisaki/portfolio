@@ -81,13 +81,19 @@ contactMePageHeader.addEventListener('click', function contactMePageScroll () {
 // function for sticky header // changing header to white on scroll // changing font color 
 function stickyHeader () {
     if (window.pageYOffset > sticky) {
-        header.classList.add('sticky')
+        header.classList.add('sticky'),
         header.style.backgroundColor ="white"
-    } else {
-        header.classList.remove('sticky')
-        header.style.backgroundColor ="#a9a9a9"
-        headerTxts.forEach((headerTxt) => headerTxt.style.color = 'white')
         headerTxts.forEach((headerTxt) => {
+            headerTxt.style.color = "#a9a9a9"
+            headerTxt.addEventListener('mouseout', function stickyMouseout(){
+                headerTxt.style.color = "#a9a9a9"
+            })
+        })
+    } else {
+        header.classList.remove('sticky'),
+        header.style.backgroundColor ="#a9a9a9"
+        headerTxts.forEach((headerTxt) => {
+            headerTxt.style.color = 'white'
             headerTxt.addEventListener('mouseout', function offTopMouseout () {
                 headerTxt.style.color = 'white'
             })
@@ -141,6 +147,7 @@ project2.addEventListener('click', function project2Link () {
 project3.addEventListener('click', function project3Link () {
     window.open('https://aimeemisaki.github.io/Project1_Ceelo/', '_blank')
 })
+
 // CONTACT ME PAGE //
 
 // grabbing email button
@@ -160,7 +167,7 @@ phoneBtn.addEventListener('click', function showNumber () {
 })
 
 
-// FOOTER
+// FOOTER //
 
 // linkedin click event listener 
 

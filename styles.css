@@ -25,6 +25,8 @@ header {
     display: flex;
     justify-content: space-around;
     width: 100vw;
+    background-color: #a9a9a9;
+    color: white;
 }
 
 .sticky {
@@ -322,7 +324,7 @@ footer {
 
 
 /*small phone screen mode*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     * {
         overflow-x: hidden;
         font-size: 12px;
