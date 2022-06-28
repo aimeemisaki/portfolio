@@ -35,6 +35,7 @@ let headerTxts = document.querySelectorAll('.header-txt')
 headerTxts.forEach((headerTxt) => {
     headerTxt.addEventListener('mouseover', function stickyMouseover () {
         headerTxt.style.color="lightgrey"
+        headerTxt.style.cursor = "pointer"
     })
     headerTxt.addEventListener('mouseout', function stickyMouseout () {
         headerTxt.style.color="grey"
@@ -85,7 +86,7 @@ function stickyHeader () {
         header.style.backgroundColor ="white"
         headerTxts.forEach((headerTxt) => {
             headerTxt.style.color = "#a9a9a9"
-            headerTxt.addEventListener('mouseout', function stickyMouseout(){
+            headerTxt.addEventListener('mouseout', function stickyMouseout () {
                 headerTxt.style.color = "#a9a9a9"
             })
         })
