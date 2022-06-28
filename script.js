@@ -94,12 +94,11 @@ function stickyHeader () {
         header.classList.remove('sticky'),
         header.style.backgroundColor ="#a9a9a9"
         headerTxts.forEach((headerTxt) => {
-            headerTxt.style.color = 'white'
+            headerTxt.style.color = "white"
             headerTxt.addEventListener('mouseout', function offTopMouseout () {
-                headerTxt.style.color = 'white'
+                headerTxt.style.color = "white"
             })
         })
-    
     } 
   };
 
@@ -156,7 +155,7 @@ let emailBtn = document.querySelector('#email-btn')
 
 // open email app event listner
 emailBtn.addEventListener('click', function openEmail () {
-    window.open ('mailto:aimeejmisaki@gmail.com')
+    window.open('mailto:aimeejmisaki@gmail.com')
 })
 
 // grabbing phone button
@@ -196,6 +195,19 @@ footerCodePenBtn.addEventListener('click', function CodePenLink () {
 })
 
 
+// mouseover cursor style to pointer event listener
+
+footerGithubBtn.addEventListener('mouseover', function GitHubCursor () {
+    footerGithubBtn.style.cursor = "pointer"
+})
+
+footerCodePenBtn.addEventListener('mouseover', function CodePenCursor () {
+    footerCodePenBtn.style.cursor = "pointer"
+})
+
+footerLinkedinBtn.addEventListener('mouseover', function LinkedinCursor () {
+    footerLinkedinBtn.style.cursor = "pointer"
+})
 
 
 

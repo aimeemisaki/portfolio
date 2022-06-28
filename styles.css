@@ -200,6 +200,8 @@ header {
     margin-bottom: 1vh;
     width: 40vw;
     border: solid 1px lightgrey;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .project-img-box {
@@ -239,7 +241,7 @@ header {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    margin-top: -3vh;
+    margin-top: 5vh;
 }
 
 
