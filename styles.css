@@ -67,7 +67,7 @@ header {
 
 #bio-line1 {
     color: green;
-    font-size: 1.25rem;
+    font-size: 1.rem;
 }
 
 #welcome-page-linkedin-btn {
@@ -138,7 +138,7 @@ header {
 #paris-box {
     height: 7rem;
     margin-left: 70vh;
-    margin-top: -117vh;
+    margin-top: -125vh;
 
 }
 
@@ -156,7 +156,7 @@ header {
 
 #tokyo-box {
     margin-left: 70vw;
-    margin-top: 36vh;
+    margin-top: 37vh;
 }
 
 #la-box {
@@ -168,7 +168,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0;
-    margin-top: 15vh;
+    margin-top: 14vh;
     margin-left: 20vw;
 }
 .world-img {
@@ -176,7 +176,12 @@ header {
 }
 
 .resume-btn-box {
-    margin-top: 55vh;
+    margin-top: 53vh;
+
+}
+.resume-btn {
+    padding: 0;
+    height: 2rem;
 }
 /* PROJECTS PAGE */
 
@@ -240,6 +245,7 @@ header {
     width: 100vw;
     display: flex;
     flex-direction: row;
+    margin-top: -7vh;
 }
 
 

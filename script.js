@@ -43,6 +43,38 @@ headerTxts.forEach((headerTxt) => {
 
 // header text event listeners 
 //grabbing header texts
+let welcomePageHeader = document.querySelector('#aimee')
+let workExperiencePageHeader = document.querySelector('#work-experience')
+let projectsPageHeader = document.querySelector('#projects-header')
+let contactMePageHeader = document.querySelector('#contact-me')
+
+//grabbing sections
+let welcomePage = document.querySelector('#welcome-page')
+let workExperiencePage = document.querySelector('#work-experience-page')
+let projectsPage = document.querySelector('.projects-skills-box')
+let contactMePage = document.querySelector('#contactme-page')
+
+// header text functions
+
+// welcomePageScroll click event
+welcomePageHeader.addEventListener('click', function welcomePageScroll () {
+    welcomePage.scrollIntoView()
+})
+
+// workExperiencePageScroll click event
+workExperiencePageHeader.addEventListener('click', function workExperiencePageScroll () {
+    workExperiencePage.scrollIntoView()
+})
+
+// projectsPageScroll click event
+projectsPageHeader.addEventListener('click', function projectsPageScroll () {
+    projectsPage.scrollIntoView()
+})
+
+// contactMePageScroll click event
+contactMePageHeader.addEventListener('click', function contactMePageScroll () {
+    contactMePage.scrollIntoView()
+})
 
 
 // function for sticky header // changing header to white on scroll // changing font color 
@@ -72,15 +104,18 @@ linkedinBtn.addEventListener ('click', function LinkedinLink () {
     window.open('https://www.linkedin.com/in/aimee-misaki-1a6b5212a/', '_blank');
 })
 
-// PROJECTS PAGE
-
-//resume btn
+// WORK EXPERIENCE PAGE //
+// grabbing resume btn and resume-modal
 let resumeBtn = document.querySelector('.resume-btn')
-let resumeModal 
+
 // open resume PDF
 resumeBtn.addEventListener('click', function openResume () {
-    window.open
-})
+    window.open('https://drive.google.com/file/d/1gZUlmY47Db55x_t2PPa7epc8_VQR4ZzB/view?usp=sharing', '_blank')
+}) 
+
+
+
+// PROJECTS PAGE //
 
 
 // CONTACT ME PAGE
@@ -108,14 +143,17 @@ phoneBtn.addEventListener('click', function showNumber () {
 
 let footerLinkedinBtn = document.querySelector('.footer-linkedin-link-box')
 
-footerLinkedinBtn.addEventListener('click', LinkedinLink)
+
+footerLinkedinBtn.addEventListener('click', function footerLinkedinLink () {
+    window.open('https://www.linkedin.com/in/aimee-misaki-1a6b5212a/', '_blank')
+})
 
 // github click even listener
 
 let footerGithubBtn = document.querySelector('#footer-github-link')
 
 footerGithubBtn.addEventListener('click', function GitHubLink () {
-    window.open('https://github.com/aimeemisaki')
+    window.open('https://github.com/aimeemisaki', '_blank')
 })
 
 // codepen click event listener 
@@ -123,7 +161,7 @@ footerGithubBtn.addEventListener('click', function GitHubLink () {
 let footerCodePenBtn = document.querySelector('#footer-codepen-link') 
 
 footerCodePenBtn.addEventListener('click', function CodePenLink () {
-    window.open('https://codepen.io/aimeemisaki')
+    window.open('https://codepen.io/aimeemisaki', '_blank')
 })
 
 
