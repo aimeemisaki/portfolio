@@ -36,10 +36,10 @@ let sticky = header.offsetTop;
 let headerTxts = document.querySelectorAll('.header-txt');
 function stickyHeader () {
     if (window.pageYOffset > sticky) {
-        header.classList.add('sticky'),
+        header.classList.add('sticky')
         header.style.backgroundColor ="white"
     } else {
-        header.classList.remove('sticky'),
+        header.classList.remove('sticky')
         header.style.backgroundColor ="#a9a9a9"
         headerTxts.forEach((headerTxt) => headerTxt.style.color = 'white')
         headerTxts.forEach((headerTxt) => {

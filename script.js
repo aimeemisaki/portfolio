@@ -82,11 +82,10 @@ contactMePageHeader.addEventListener('click', function contactMePageScroll () {
 // function for sticky header // changing header to white on scroll // changing font color 
 function stickyHeader () {
     if (window.pageYOffset > sticky) {
-        header.classList.add('sticky'),
+        header.classList.add('sticky')
         header.style.backgroundColor ="white"
-
     } else {
-        header.classList.remove('sticky'),
+        header.classList.remove('sticky')
         header.style.backgroundColor ="#a9a9a9"
         headerTxts.forEach((headerTxt) => headerTxt.style.color = 'white')
         headerTxts.forEach((headerTxt) => {
