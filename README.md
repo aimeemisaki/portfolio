@@ -1,2 +1,47 @@
-# portfolio
-Aimee Misaki's Portfolio
+# Aimee Misaki's Portfolio
+***
+## Screenshots of Portfolio
+---
+![WelcomePage](/readme-images/welcomepage.png)
+
+![WorkExperiencePage](/readme-images/workexperiencepage.png)
+
+![ProjectsPage](/readme-images/projectspage.png) 
+
+![ContactPage](/readme-images/contactpage.png)
+
+## Wireframes
+---
+![Wireframe1](/readme-images/wireframe1.png)
+
+![Wireframe2](/readme-images/wireframe2.png)
+
+![Wireframe3](/readme-images/wireframe3.png)
+
+![Wireframe4](/readme-images/wireframe4.png)
+
+## Tech Stack
+---
+* HTML/CSS
+* Javascript
+
+
+## User Stories 
+---
+* As a software engineer recruiter, I would like to see that my potential junior developer has the ability to use different JS event handlers, so that they can be ready to use them for our projects.
+* As a recruiter from a creative company, I would like to see a visually clean and pleasing website, so that they can work both front and back end.
+* As a recruiter from a global company, I would like to see that my potential employee has had global work experience.
+
+
+
+## Unsolved Problems / Major Hurdles
+---
+* Changing dimensions of elements according to different media sizes
+* Use of flexbox in general, especially for Work Experience Page
+
+## Future Stretch Goals 
+--- 
+* Adding a questionnaire input to access my phone number 
+* Editing elements according to more media sizes 
+* Creating my own background images that shrink
+* Carousel for Project Page when I have more projects

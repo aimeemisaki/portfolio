@@ -80,7 +80,6 @@ contactMePageHeader.addEventListener('click', function contactMePageScroll () {
 
 
 // function for sticky header // changing header to white on scroll // changing font color 
-// ??? header not changing to transparent
 function stickyHeader () {
     if (window.pageYOffset > sticky) {
         header.classList.add('sticky'),
