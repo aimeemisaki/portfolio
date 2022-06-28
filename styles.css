@@ -129,10 +129,11 @@ header {
 }
 
 .work-box {
-    background-color: lightgrey;
+    background-color: #a9a9a9;
     width: 18rem;
     padding: 0.2rem;
     margin: 0;
+    color: white;
 }
 
 #paris-box {
@@ -317,7 +318,7 @@ footer {
     margin-bottom: 10vh;
 }
 .copyright {
-    color: grey;
+    color: green;
 }
 .footer-links-box {
     width: 30vw;
@@ -331,3 +332,29 @@ footer {
     height: 4rem;
 }
 
+
+/*small phones*/
+@media only screen and (max-width: 600px) {
+
+}
+
+
+/*tablets and large phones*/
+@media only screen and (min-width: 600px) {
+
+}
+
+/*medium devices*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/*large devices eg laptops*/
+@media only screen and (min-width: 992px) {
+
+}
+
+/*extra large devices eg large laptops*/
+@media only screen and (min-width: 1200px) {
+    
+}

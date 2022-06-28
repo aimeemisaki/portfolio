@@ -125,9 +125,26 @@ resumeBtn.addEventListener('click', function openResume () {
 
 // PROJECTS PAGE //
 // getting elements
+let project1 = document.querySelector('#project-descript-box1')
+let project2 = document.querySelector('#project-descript-box2')
+let project3 = document.querySelector('#project-descript-box3')
 
 
-// CONTACT ME PAGE
+
+// adding click event listeners for each project
+project1.addEventListener('click', function project1Link () {
+    window.open('https://esin87.github.io/tamagotchi-demo/', '_blank')
+})
+
+project2.addEventListener('click', function project2Link () {
+    window.open('http://ga-wdi-exercises.github.io/pixart_js/', '_blank')
+
+})
+
+project3.addEventListener('click', function project3Link () {
+    window.open('https://aimeemisaki.github.io/Project1_Ceelo/', '_blank')
+})
+// CONTACT ME PAGE //
 
 // grabbing email button
 let emailBtn = document.querySelector('#email-btn')
