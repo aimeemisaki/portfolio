@@ -124,6 +124,7 @@ resumeBtn.addEventListener('click', function openResume () {
 
 
 // PROJECTS PAGE //
+// getting elements
 
 
 // CONTACT ME PAGE

@@ -182,6 +182,7 @@ header {
 .resume-btn {
     padding: 0;
     height: 2rem;
+    color: green;
 }
 
 .city-h3 {
