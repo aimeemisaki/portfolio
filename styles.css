@@ -3,21 +3,20 @@
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 body {
-    background-color: white;
+    background-color: transparent;
     color: grey;
     padding: 0;
     margin: 0;
     min-width: 100%;
     overflow-x: hidden;
-    
 }
 
 .page {
+    background-color: white;
     height: 100vh;
     padding-top: 5rem;
     padding-bottom: 2rem;
     margin: 0;
-    border: 1px solid black;
 }
 /* HEADER */
 
@@ -46,7 +45,7 @@ header {
 }
 
 .intro-box {
-    margin-top: 25vh;
+    margin-top: 10vh;
     margin-left: 10vw;
 }
 
@@ -109,6 +108,7 @@ header {
 }
 
 /* work-experience page*/
+
 
 #work-experience-page {
     background-color: white;
@@ -183,6 +183,11 @@ header {
     padding: 0;
     height: 2rem;
 }
+
+.city-h3 {
+    color: green;
+    text-align: center;
+}
 /* PROJECTS PAGE */
 
 #projects-page {
@@ -245,7 +250,7 @@ header {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    margin-top: -7vh;
+    margin-top: -3vh;
 }
 
 
@@ -292,6 +297,9 @@ header {
     
 }
 
+#email-txt {
+    color: green;
+}
 
 /* footer */
 footer {
@@ -320,5 +328,5 @@ footer {
 }
 .footer-links {
     height: 4rem;
-
 }
+

@@ -41,6 +41,8 @@ headerTxts.forEach((headerTxt) => {
     })
 })
 
+
+
 // header text event listeners 
 //grabbing header texts
 let welcomePageHeader = document.querySelector('#aimee')
@@ -81,12 +83,18 @@ contactMePageHeader.addEventListener('click', function contactMePageScroll () {
 // ??? header not changing to transparent
 function stickyHeader () {
     if (window.pageYOffset > sticky) {
-        header.classList.add('sticky')
-        header.style.background ='white'
+        header.classList.add('sticky'),
+        header.style.backgroundColor ="white"
 
     } else {
         header.classList.remove('sticky'),
-        header.style.background ='transparent'
+        header.style.backgroundColor ="#a9a9a9"
+        headerTxts.forEach((headerTxt) => headerTxt.style.color = 'white')
+        headerTxts.forEach((headerTxt) => {
+            headerTxt.addEventListener('mouseout', function offTopMouseout () {
+                headerTxt.style.color = 'white'
+            })
+        })
     
     } 
   };
