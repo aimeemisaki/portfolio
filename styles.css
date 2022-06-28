@@ -2,6 +2,7 @@
 * {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
+
 body {
     background-color: transparent;
     color: grey;
@@ -74,21 +75,22 @@ header {
     margin-left: 77vw;
     margin-bottom: 20vh;
 }
+
 .profile-img {
     height: 15rem;
     width: 15rem;
-
 }
+
 .profile-img-box {
     margin-left: 60vw;
     margin-top: -55vh;
 }
 
-
 .down-img-box {
     height: 6vh;
     width: 8vh;
 }
+
 .down-img {
     height: 4rem;
     width: 5rem;
@@ -96,7 +98,6 @@ header {
     bottom: 0vh;
     margin-left: 45vw;
     margin-right: 45vw;
-
 }
 
 .scroll-down {
@@ -115,7 +116,6 @@ header {
     margin-top: 0;
     padding-top: 2vh;
 }
-
 
 .resume-btn-box {
     display: flex;
@@ -142,9 +142,7 @@ header {
     height: 7rem;
     margin-left: 70vh;
     margin-top: -125vh;
-
 }
-
 
 #nyc-box {
     width: 15rem;
@@ -174,6 +172,7 @@ header {
     margin-top: 14vh;
     margin-left: 20vw;
 }
+
 .world-img {
     height: 51rem;
 }
@@ -189,7 +188,6 @@ header {
     flex: row;
     align-items: center;
 }
-
 
  .project-box {
     display: flex;
@@ -210,13 +208,11 @@ header {
     flex-direction: column;
     align-items: space-between;
     margin-top: 4vh;
-
 }
 
 .project-img {
     height: 10rem;
     width: 15rem;
-    /* margin-left: 2vw; */
 }
 
 .skills-box {
@@ -238,7 +234,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    }   
+}   
 
 .projects-skills-box {
     width: 100vw;
@@ -257,7 +253,6 @@ header {
     font-size: 7rem;
     text-align: center;
     margin-top: 30vh;
-
 }
 
 .contactme-body-box {
@@ -275,11 +270,13 @@ header {
     width: 7rem;
     padding-top: 2rem;
 }
+
 .phone-modal-box {
     margin-top: -30vh;
     margin-left: 36vh;
     margin-right: 36vh;
 }
+
 .phone-modal {
     background-color: lightgrey;
     padding: 3rem;
@@ -288,7 +285,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 #email-txt {
@@ -309,9 +305,11 @@ footer {
 .short-bio-box {
     margin-bottom: 10vh;
 }
+
 .copyright {
     color: green;
 }
+
 .footer-links-box {
     width: 30vw;
     margin-top: 3vh;
@@ -320,6 +318,7 @@ footer {
     justify-content: space-between;
     flex-direction: row;
 }
+
 .footer-links {
     height: 4rem;
 }
@@ -327,82 +326,83 @@ footer {
 
 /*small phones*/
 @media only screen and (max-width: 600px) {
-* {
-    overflow-x: hidden;
-    font-size: 12px;
-}
-.welcome-page {
-    display: flex;
-    flex-direction: row-reverse;
-}
-.intro-box {
-    margin-top: 0vh;
-    margin-left: 10vw;
-    text-align: center;
-}
-.bio-div {
-    width: 300px;
-    height: 450px;
-    margin-left: 10vw;
-    margin-bottom: -5vh;
-    text-align: center;
-}
+    * {
+        overflow-x: hidden;
+        font-size: 12px;
+    }
 
-.profile-img-box {
-    margin-left: 25vw;
+    .welcome-page {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
-}
+    .intro-box {
+        margin-top: 0vh;
+        margin-left: 10vw;
+        text-align: center;
+    }
 
-.world-img {
-    visibility: hidden;
-}
-.work-box {
-    width: 120px;
-    display: flex;
-    flex-direction: column;
-    
-}
+    .bio-div {
+        width: 300px;
+        height: 450px;
+        margin-left: 10vw;
+        margin-bottom: -5vh;
+        text-align: center;
+    }
 
-#berlin-box {
-    margin-top: 30vh;
-    margin-left: 60vw;
-}
+    .profile-img-box {
+        margin-left: 25vw;
+    }
 
-#nyc-box {
-    margin-top: -70vh;
-}
+    .world-img {
+        visibility: hidden;
+    }
 
-#tokyo-box {
-    margin-left: 60vw;
-}
+    .work-box {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+    }
 
-#la-box {
-    margin-top: -10vh;
-}
+    #berlin-box {
+        margin-top: 30vh;
+        margin-left: 60vw;
+    }
 
-.resume-btn-box {
-    margin-top: 2vh;
-}
+    #nyc-box {
+        margin-top: -70vh;
+    }
 
-.project-img {
-    width: 50px;
-    height: 50px;
-}
-.skills-box {
-    width: 320px;
-}
+    #tokyo-box {
+        margin-left: 60vw;
+    }
 
-.short-bio-box {
-    width: 400px;
-    height: 200px;
-    margin-left: 10px;
-}
+    #la-box {
+        margin-top: -10vh;
+    }
 
-.footer-links-box {
-    margin-right: 10vw;
-    display: flex;
-    justify-content: space-evenly;
-    
-}
+    .resume-btn-box {
+        margin-top: 2vh;
+    }
+
+    .project-img {
+        width: 50px;
+        height: 50px;
+    }
+    .skills-box {
+        width: 320px;
+    }
+
+    .short-bio-box {
+        width: 400px;
+        height: 200px;
+        margin-left: 10px;
+    }
+
+    .footer-links-box {
+        margin-right: 10vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
