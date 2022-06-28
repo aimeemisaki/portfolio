@@ -30,7 +30,7 @@
 * Javascript
 
 <br/>
-```Javascript
+```
 let header = document.querySelector('header');
 let sticky = header.offsetTop;
 let headerTxts = document.querySelectorAll('.header-txt');
@@ -48,7 +48,8 @@ function stickyHeader () {
             })
         })
     } 
-  };```
+  };
+  ```
 
 ## Approach
 ---
