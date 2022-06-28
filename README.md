@@ -38,7 +38,6 @@ function stickyHeader () {
     if (window.pageYOffset > sticky) {
         header.classList.add('sticky'),
         header.style.backgroundColor ="white"
-
     } else {
         header.classList.remove('sticky'),
         header.style.backgroundColor ="#a9a9a9"
@@ -48,7 +47,6 @@ function stickyHeader () {
                 headerTxt.style.color = 'white'
             })
         })
-    
     } 
   };```
 
