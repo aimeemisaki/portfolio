@@ -30,7 +30,7 @@ header {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
 }
 
 .header-text {
@@ -40,7 +40,7 @@ header {
 /* WELCOME PAGE */
 
 #welcome-page {
-    background-color: darkgrey;
+    background-color: #a9a9a9;
     padding-bottom: 0;
     color: white;
 }
@@ -54,11 +54,20 @@ header {
     font-size: 2rem;
 }
 
+#intro-txt-eng {
+    color: green;
+}
+
 .bio-div {
     height: 0rem;
     width: 25rem;
     margin-left: 15vw;
     margin-top: 5vh;
+}
+
+#bio-line1 {
+    color: green;
+    font-size: 1.25rem;
 }
 
 #welcome-page-linkedin-btn {
@@ -173,32 +182,30 @@ header {
 
 #projects-page {
     display: flex;
-    flex-direction: row;
+    flex: row;
+    align-items: center;
 }
 
-
-.projects-box {
-    display: flex;
-    flex-direction: row;
-    /* width: 62%;
-    height: 40%;
-    margin-left: 5vw;
-    margin-top: 10vh; */
-} 
 
  .project-box {
-   display: flex;
+    display: flex;
+    margin-left: 15vw;
 }
 
-.project-description-box {
-    padding-left: 5rem;
+.project-descript-box {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    width: 40vw;
+    border: solid 1px lightgrey;
 }
 
 .project-img-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: space-between;
+    margin-top: 4vh;
 
 }
 
@@ -215,6 +222,26 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+.skills-box-flex {
+    display: flex;
+    align-items: center;
+    margin-left: 7vw;
+    margin-right: 15vw;
+}
+.projects-box {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }   
+
+.projects-skills-box {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* contact page */
 #contactme-page {

@@ -22,7 +22,6 @@ downArrowBox.addEventListener('mouseout', function downMouseOut () {
 
 
 // HEADER (NAV BAR) //
-
 // grabbing header
 let header = document.querySelector('header')
 
@@ -35,23 +34,27 @@ let headerTxts = document.querySelectorAll('.header-txt')
 // hover header texts
 headerTxts.forEach((headerTxt) => {
     headerTxt.addEventListener('mouseover', function stickyMouseover () {
-        headerTxt.style.color="grey"
+        headerTxt.style.color="lightgrey"
     })
     headerTxt.addEventListener('mouseout', function stickyMouseout () {
-        headerTxt.style.color="darkgrey"
+        headerTxt.style.color="grey"
     })
 })
+
+// header text event listeners 
+//grabbing header texts
+
 
 // function for sticky header // changing header to white on scroll // changing font color 
 // ??? header not changing to transparent
 function stickyHeader () {
     if (window.pageYOffset > sticky) {
         header.classList.add('sticky')
-        header.style.background ="white"
+        header.style.background ='white'
 
     } else {
-        header.classList.remove('sticky')
-        header.style.background ="#0000"
+        header.classList.remove('sticky'),
+        header.style.background ='transparent'
     
     } 
   };
