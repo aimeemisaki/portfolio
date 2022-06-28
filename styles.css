@@ -33,9 +33,6 @@ header {
     width: 100vw;
 }
 
-.header-text {
-    color: blue;
-}
 
 /* WELCOME PAGE */
 
@@ -324,7 +321,7 @@ footer {
 }
 
 
-/*small phones*/
+/*small phone screen mode*/
 @media only screen and (max-width: 600px) {
     * {
         overflow-x: hidden;
@@ -406,3 +403,11 @@ footer {
     }
 }
 
+/*tablet screen mode*/
+
+/* @media only screen and (min-width: 600px) {
+    * {
+        overflow-x: hidden;
+    }
+    
+} */
