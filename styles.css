@@ -112,7 +112,7 @@ header {
 
 #work-experience-page {
     background-color: white;
-    margin-top: 0;
+    margin-bottom: -5vh;
     padding-top: 2vh;
 }
 
@@ -140,13 +140,13 @@ header {
 #paris-box {
     height: 7rem;
     margin-left: 70vh;
-    margin-top: -125vh;
+    margin-top: -115vh;
 }
 
 #nyc-box {
     width: 15rem;
     margin-left: 7vw;
-    margin-top: -90vh;
+    margin-top: -85vh;
 }
 
 #berlin-box {
@@ -168,12 +168,14 @@ header {
     display: flex;
     align-items: center;
     padding: 0;
-    margin-top: 14vh;
+    margin-top: 15vh;
+    margin-bottom: -10vh;
     margin-left: 20vw;
+    
 }
 
 .world-img {
-    height: 51rem;
+    height: 50rem;
 }
 
 .city-h3 {
@@ -241,7 +243,7 @@ header {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 
